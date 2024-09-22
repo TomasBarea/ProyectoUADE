@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/Empresa/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bodyContacto">
@@ -21,23 +21,21 @@
             </div>
 
             <div class="logotipo">
-                <!-- <img height="70px" width="80px" src="/Multimedia/logoProvisional.jpg"> -->
-                <a href="/Empresa/index.html"><img id="imgLogo" src="/Multimedia/logoPng.png"></a>
+              
+                <a href="index.html"><img id="imgLogo" src="/Multimedia/logoPng.png"></a>
             </div>
 
             <div class="links">
                 <ul>
-                    <li><a href="/Empresa/index.html#hr3">Modelos</a></li>
-                    <li><a href="/Empresa/index.html#hr1">Sobre la Empresa</a></li>
-                    <li><a href="/Empresa/index.html#hr4">Servicios</a></li>
-                    <li><a href="/Empresa/contacto.html">Contacto</a></li>
+                    <li><a href="index.html#hr1">Sobre la Empresa</a></li>
+                    <li><a href="index.html#hr3">Modelos</a></li> 
+                    <li><a href="index.html#hr4">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
 
         </nav>
     </header>
-
-    <section>
         <div class="contenedorContacto">
             <h1>Contacto</h1>
             <div class="items">
@@ -52,19 +50,13 @@
                 <span>Dirección:</span>
                 <p>Av. 9 de Julio, ,<br> Buenos Aires, Argentina.</p>
 
-                <form class="form" method="post">
-                    <h4>Comenta tu experiencia!</h4>
-                    <input type="email" id="email" name="email" placeholder="  Email" required> 
-                    <textarea id="experiencia" name="experiencia" class="descripcion" placeholder=" Descripcion" required></textarea>
-                    <button> Enviar</button>
+                <form class="form">
+                    <h4>¡Comenta tu experiencia!</h4>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <textarea id="experiencia" name="experiencia" class="descripcion" placeholder="Descripción" required></textarea>
+                    <button onclick="alert('Gracias por compartir tu experiencia con nosotros!!!')">Enviar</button>
                 </form>
-            
-        
-            </div>
-             
-        </div>
-       
-    </section>
+            </div>            
+        </div>      
 </body>
-
 </html>

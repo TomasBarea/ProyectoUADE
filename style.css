@@ -230,12 +230,6 @@ body {
 
 }
 
-/* #modelos li:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-} */
-
-
 .gralModelos img {
     width: 100%;
    
@@ -665,4 +659,130 @@ body {
 
 
 }
+
+
+
+/* ------------------------------------- RESPONSIVE  --------------------------------------------------------- */
+
+ @media (max-width: 1024px){ /*laptop */
+
+    html, body {
+        overflow-x: hidden; 
+    }
+      
+   .header{
+        width: 1024px;
+   }
+   .nav{
+        width: 1024px;
+        padding-right: 15px;
+   }
+
+   .sec1{
+    margin-top: 0;
+    h1{
+        margin: 0;
+    }
+   }
+   .gralModelos{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+   }
+   .gralModelos li {
+        flex: 1 1 calc(50% - 20px);
+        margin-top: 5px;
+    
+   }
+
+  .gralModelos button{
+        width: 95%;
+   }
+
+   .segImagen{
+        padding: 0;
+        height: 700px;
+        h2{
+            margin-left: 15px;
+        }
+        p{
+            margin: 0;
+            width: 30%;
+            margin-left: 15px;
+        }
+        button{
+            margin-left: 15px;
+            margin-top: 25px;
+        }
+   }
+   .secServ1{
+    margin: 0;
+    a{
+        margin: 35px;
+    }
+   }
+   .divServ2{
+    width: 1024px;
+    img{
+        width: 100%;
+    }
+   }
+
+   .secServ3{
+
+    img{
+        margin: 0;
+        width: 100%;
+    }
+   }
+
+   .secServ4{
+    margin: 0;
+    p{
+        padding: 10px;
+    }
+    a{
+        padding: 20;
+        margin: 35px;
+    }
+   }
+
+   
+
+   .btnInicio{
+    width: 15%;
+    margin-left: 10px;
+
+    a p{
+        padding: 15px;
+    }
+   }
+
+   .bodyContacto{
+    width: 1024px;
+    height: 820px;
+   }
+
+   .contenedorContacto{
+    width: 100%;
+    height: 600px;
+    margin-right: 275px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: self-starts;
+    justify-content: flex-start;
+   }
+
+
+
+
+
+
+
+
+
+
+}
+  
 
