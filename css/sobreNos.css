@@ -1,0 +1,292 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+margin: 0;
+}
+
+
+/* NAV  */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #242424;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0px;
+}
+
+
+#imgLogo {
+    width: 75px;
+    height: 55px;
+    margin: 6px;
+
+
+}
+
+
+.titulo p {
+    font-family: Bona Nova SC;
+    font-size: 30px;
+    color: #ffffff;
+    margin: 20px ;
+    
+}
+
+
+/* LINKS DEL NAV  */
+
+
+.links ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.links li {
+    padding-inline: 2px;
+    margin: 2px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;}
+
+.links a {
+    padding: 3px;
+    transition: background-color 0.2s, color 0.2s;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.links a:hover {
+    color: #2bc016;
+
+}   
+
+
+
+/* APARTADO PRINCIPAL DE SOBRE NOSOTROS  */
+
+.aboutUs {
+    background-color: #fffffff6;
+    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 100px;
+}
+
+.aboutUs h1 {
+
+    text-align: center;
+    color: #131313;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-top: 50px;
+    margin-top: 0px;
+}
+
+
+
+/* TEXTO SOBRE NOSOTROS */
+
+.sobreNos1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sobreNos1 p {
+    text-align: center;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+/* NUESTRA HISTORIA */
+
+.sobreNos2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: #ececec7d;
+    margin-left: 0px;
+}
+
+.sec1 {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 120px;
+    width: 60%;
+    margin-right: 150px;
+    margin-top: 80px;
+}
+
+.sec1 h1 {
+    text-align: center;
+}
+
+.sec1 p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.sec2 img {
+    width: 600px;
+    height: 500px;
+    margin-right: 70px;
+}
+
+
+
+
+/* IMAGEN DEBAJO DE SOBRE NOSOTROS */
+
+.imgSN {
+    width: 100vw;
+    max-width: 3000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.imgSN img {
+    width: 100%;
+    margin-bottom: -5px;
+    height: 600px;
+    object-fit: cover;
+
+}
+
+
+
+
+/* FOOTER  */
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+.contac {
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+    background-color: #242424;
+
+}
+
+
+.btnInicio {
+    margin-left: 90px;
+
+}
+
+.btnInicio p {
+    background-color: #2bc016;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 2px;
+    margin-top: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.btnInicio p:hover {
+    background-color: #30d21b;
+
+
+}
+
+.btnInicio a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logos {
+    display: flex;
+}
+
+.logos img {
+    padding: 6px;
+}
+
+#yt img {
+    width: 40px;
+    padding-top: 17px;
+}
+
+#tw img {
+    width: 65px;
+    height: 45px;
+    padding: 0px;
+    padding-top: 8px;
+}
+
+#ml img {
+    width: 40px;
+    padding-top: 17px;
+}
+
+#ig img {
+    height: 35px;
+    width: 35px;
+    padding-left: 15px;
+    padding-top: 13px;
+}
+
+#fc img {
+    height: 60px;
+    width: 60px;
+    padding-top: 0px;
+}
+
+#wp img {
+    height: 37px;
+    width: 37px;
+    padding-top: 12px;
+}
+
+.footerNote {
+    color: #e0e0e0;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+
+}

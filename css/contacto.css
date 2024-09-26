@@ -1,0 +1,359 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* NAV  */
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #242424;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0px;
+}
+
+
+#imgLogo {
+    width: 75px;
+    height: 55px;
+    margin: 6px;
+
+
+}
+
+#hr {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    border: 2px solid #2bc016;
+}
+
+
+
+.titulo p {
+    font-family: Bona Nova SC;
+    font-size: 30px;
+    color: #ffffff;
+    margin: 20px;
+
+}
+
+
+/* LINKS DEL NAV  */
+
+.links ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.links li {
+    padding-inline: 2px;
+    margin: 2px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;}
+
+.links a {
+    padding: 3px;
+    transition: background-color 0.2s, color 0.2s;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.links a:hover {
+    color: #2bc016;
+
+}
+
+
+
+
+/* IMAGEN CON TEXTO  */
+
+.imgContUs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/img/supras.jpg);
+    background-size: cover;
+    color: #ffffff;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.imgContUs h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: 450;
+
+}
+
+.imgContUs p {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+
+
+
+
+/* PARTE DE CONTACTO  */
+
+.contacto {
+    width: 100%;
+
+}
+
+.contenedorContacto {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    height: 600px;
+
+}
+
+
+.contenedorContacto h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+
+
+
+/* FORMULARIO ADENTRO DEL CONTACTO  */
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    
+    .descripcion {
+        margin-top: 10px;
+        resize: none;
+        
+    }
+
+    .inputForm {
+        padding: 10px;
+        background-color: #dfdfdf;
+        border: 0;
+        border-radius: 2px;
+        color: #424242;
+        outline-color: #798178cb;
+    }
+
+
+    .descripcion {
+        padding-bottom: 130px;
+        background-color: #dfdfdf;
+        border: 0;
+        border-radius: 2px;
+        outline-color: #798178cb;
+    }
+
+
+
+    button {
+        font-size: 15px;
+        color: #fff;
+        background-color: #2bc016;
+        padding: 7px;
+        padding-right: 142px;
+        padding-left: 142px;
+        margin-top: 20px;
+        border: 0;
+        cursor: pointer;
+        border-radius: 2rem;
+    }
+
+    button:hover {
+        background-color: #30d21b;
+    }
+
+    h4 {
+        color: #7c7c7ce0;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 6px;
+    }
+}
+
+
+
+
+/* PARTE DE ITEMS DEL CONTACTO  */
+
+.itemsBox {
+    width: 20%;
+}
+
+
+.itemsBox h1 {
+    color: #242424;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.items {
+    padding: 2px;
+    margin-top: 10px;
+
+}
+
+.items span {
+    display: block;
+    font-weight: bold;
+    color: #424242e0;
+}
+
+.items a {
+    text-decoration: underline;
+    font-weight: 550;
+    color: #2bc016;
+
+
+}
+
+.items a:hover {
+    color: #30d21b;
+}
+
+.items p {
+    color: #7c7c7ce0;
+}
+
+
+
+/* FOOTER  */
+
+
+footer {
+    background-color: #242424;
+    bottom: 0;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.contac {
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+}
+
+
+.btnInicio {
+    margin-left: 90px;
+
+}
+
+.btnInicio p {
+    background-color: #2bc016;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 2px;
+    margin-top: 12px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+.btnInicio p:hover {
+    background-color: #30d21b;
+
+
+}
+
+.btnInicio a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logos {
+    display: flex;
+}
+
+.logos img {
+    padding: 6px;
+}
+
+#yt img {
+    width: 40px;
+    padding-top: 17px;
+}
+
+#tw img {
+    width: 65px;
+    height: 45px;
+    padding: 0px;
+    padding-top: 8px;
+}
+
+#ml img {
+    width: 40px;
+    padding-top: 17px;
+}
+
+#ig img {
+    height: 35px;
+    width: 35px;
+    padding-left: 15px;
+    padding-top: 13px;
+}
+
+#fc img {
+    height: 60px;
+    width: 60px;
+    padding-top: 0px;
+}
+
+#wp img {
+    height: 37px;
+    width: 37px;
+    padding-top: 12px;
+}
+
+.footerNote {
+    color: #e0e0e0;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+
+}
