@@ -5,7 +5,7 @@ const products = [
         "Sector": "Sedan deportivo",
         "Motor": "V8 biturbo de 4.4l",
         "Precio": 1200000.00,
-        "image": "bmw.webp"
+        "image": "./img/bmw.webp"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@ const products = [
         "Sector": "Superdeportivo",
         "Motor": "V12 biturbo de 6.0l",
         "Precio": 1200000.00,
-        "image": "pagani.webp"
+        "image": "./img/pagani.webp"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@ const products = [
         "Sector": "Hyperdeportivo",
         "Motor": "W16 quad-turbo de 8.0l",
         "Precio": 1200000.00,
-        "image": "buga2.jpg"
+        "image": "./img/buga2.jpg"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@ const products = [
         "Sector": "Deportivo",
         "Motor": "6 cilindros con 2 turbocompresores",
         "Precio": 1200000.00,
-        "image": "porsche1.jpg"
+        "image": "./img/porsche1.jpg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@ const products = [
         "Sector": "Deportivo",
         "Motor": "6 cilindros en boxer de 2.4l",
         "Precio": 1200000.00,
-        "image": "porsche1.jpg"
+        "image": "./img/porsche1.jpg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@ const products = [
         "Sector": "Superdeportivo",
         "Motor": "V8 aspirado de 4.5l",
         "Precio": 1200000.00,
-        "image": "ferra.jpeg"
+        "image": "./img/ferra.jpeg"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@ const products = [
         "Sector": "Superdeportivo",
         "Motor": "V10 atmosférico de 5.2l",
         "Precio": 1200000.00,
-        "image": "r8.jpg"
+        "image": "./img/r8.jpg"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@ const products = [
         "Sector": "Deportivo",
         "Motor": "V12 biturbo de 2.9l",
         "Precio": 1200000.00,
-        "image": "rs5.jpg"
+        "image": "./img/rs5.jpg"
     }
 ];
 
@@ -77,6 +77,8 @@ function renderProductList() {
         productDiv.innerHTML = `
             <h2>${product.Nombre}</h2>
             <img src="${product.image}" alt="${product.Nombre}" width="150" />
+            <p> ${product.Sector} </p>
+            <p> ${product.Motor} </p>
             <p>Precio: $${product.Precio}</p>
             <button data-id="${product.id}">Ver detalles</button>
         `;
