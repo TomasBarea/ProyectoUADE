@@ -606,6 +606,19 @@ footer {
 
 
 }
+.hidden {
+    display: none;
+  }
+  
+  #product-list .product {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #product-detail {
+    margin: 20px;
+  }
 
 
 /* ------------------------------------- RESPONSIVE  --------------------------------------------------------- */
