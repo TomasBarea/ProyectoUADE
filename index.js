@@ -76,6 +76,7 @@ function renderProductList() {
         productDiv.innerHTML = `
             <h2>${product.Nombre}</h2>
             <img src="${product.image}" alt="${product.Nombre}" width="150" />
+            <p> Sector: ${product.Sector}</p>
             <p>Precio: $${product.Precio}</p>
             <a href="/pages/detalle.html?id=${product.id}">Ver detalles</a>
         `;
