@@ -66,7 +66,6 @@ const products = [
 ];
 
 const productList = document.getElementById("product-list");
-const productDetail = document.getElementById("product-detail");
 
 
 function renderProductList() {
@@ -77,45 +76,14 @@ function renderProductList() {
         productDiv.innerHTML = `
             <h2>${product.Nombre}</h2>
             <img src="${product.image}" alt="${product.Nombre}" width="150" />
-            <p> ${product.Sector} </p>
-            <p> ${product.Motor} </p>
             <p>Precio: $${product.Precio}</p>
-            <button data-id="${product.id}">Ver detalles</button>
+            <a href="/pages/detalle.html?id=${product.id}">Ver detalles</a>
         `;
-
-        
-        productDiv.querySelector("button").addEventListener("click", (e) => {
-            const productId = e.target.getAttribute("data-id");
-            renderProductDetail(productId);
-        });
 
         productList.appendChild(productDiv);
     });
 }
 
-
-function renderProductDetail(id) {
-    const product = products.find(p => p.id == id);
-
-    productDetail.innerHTML = `
-        <h2>${product.Nombre}</h2>
-        <img src="${product.image}" alt="${product.Nombre}" width="300" />
-        <p><strong>Sector:</strong> ${product.Sector}</p>
-        <p><strong>Motor:</strong> ${product.Motor}</p>
-        <p><strong>Precio:</strong> $${product.Precio}</p>
-        <button id="back-btn">Volver</button>
-    `;
-
-    
-    productList.classList.add("hidden");
-    productDetail.classList.remove("hidden");
-
-    
-    document.getElementById("back-btn").addEventListener("click", () => {
-        productDetail.classList.add("hidden");
-        productList.classList.remove("hidden");
-    });
-}
 
 
 renderProductList();
