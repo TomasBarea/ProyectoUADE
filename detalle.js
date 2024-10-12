@@ -7,7 +7,7 @@ const products = [
         "Motor": "V8 biturbo de 4.4l",
         "HP": "+600hp",
         "Kilometros": "47.320 kilómetros",
-        "Precio": "161.000,00",
+        "Precio": "161.000,00",        
         "image": "bmw.webp"
     },
     {
@@ -17,7 +17,7 @@ const products = [
         "Motor": "V12 biturbo de 6.0l",
         "HP": "+720hp",
         "Kilometros": "12.850 kilómetros",
-        "Precio": "6.400.000,00",
+        "Precio": "6.400.000,00",        
         "image": "pagani.webp"
     },
     {
@@ -27,7 +27,7 @@ const products = [
         "Motor": "W16 quad-turbo de 8.0l",
         "HP": "+1470hp",
         "Kilometros": "23.456 kilómetros",
-        "Precio": "3.200.000,00",
+        "Precio": "3.200.000,00",        
         "image": "buga2.jpg"
     },
     {
@@ -37,7 +37,7 @@ const products = [
         "Motor": "6 cilindros con 2 turbocompresores",
         "HP": "640hp",
         "Kilometros": "34.789 kilómetros",
-        "Precio": "800.000,00",
+        "Precio": "800.000,00",      
         "image": "porsche1.jpg"
     },
     {
@@ -57,7 +57,7 @@ const products = [
         "Motor": "V8 aspirado de 4.5l",
         "HP": "570hp",
         "Kilometros": "29.457 kilómetros",
-        "Precio": "240.000,00",
+        "Precio": "240.000,00",       
         "image": "ferra.jpeg"
     },
     {
@@ -67,7 +67,7 @@ const products = [
         "Motor": "V10 atmosférico de 5.2l",
         "HP": "+560hp",
         "Kilometros": "41.732 kilómetros",
-        "Precio": "210.000,00",
+        "Precio": "210.000,00",        
         "image": "r8.jpg"
     },
     {
@@ -77,7 +77,7 @@ const products = [
         "Motor": "V12 biturbo de 2.9l",
         "HP": "444hp",
         "Kilometros": "3.540 kilómetros",
-        "Precio": "120.000,00",
+        "Precio": "120.000,00",        
         "image": "rs5.jpg"
     }
 ];
@@ -106,12 +106,12 @@ function renderProductDetail(id) {
 
     if (!product) {
         console.error("Producto no encontrado con ID:", id);
-        productDetail.innerHTML = <p>Producto no encontrado.</p>;
+        productDetail.innerHTML = `<p>Producto no encontrado.</p>`;
         return;
     }
 
     productDetail.innerHTML = `
-    <div id="imagenDetail">
+<div id="imagenDetail">
         <img src="../img/${product.image}" alt="${product.Nombre}" width="300" /> 
     </div>
     <div id="detalleDetail">
@@ -133,7 +133,7 @@ function renderProductDetail(id) {
     `;
 
     document.getElementById("back-btn").addEventListener("click", () => {
-        window.location.href = "../index.html#modelos";
+        window.location.href = "../index.html";
     });
 }
 
