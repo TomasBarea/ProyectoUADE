@@ -125,7 +125,10 @@ function renderProductDetail(id) {
         <div id="precio">
             <p ><strong>Precio:</strong> US$${product.Precio}</p>
         </div>
-        <button id="back-btn">Volver a los modelos</button>
+        <div  id="botones">
+            <button id="back-btn">Volver a los modelos</button>
+            <button  id="comprar-btn">Comprar</button>
+        </div>
         <div id="footer">
             <p>Este vehiculo es vendido por  <span>'Emerald Fusion Cars'</span> </p>
         </div>
@@ -135,6 +138,9 @@ function renderProductDetail(id) {
     document.getElementById("back-btn").addEventListener("click", () => {
         window.location.href = "../index.html";
     });
+    document.getElementById("comprar-btn").addEventListener("click",() =>{
+        window.location.href = "../pages/compra.html";
+    })
 }
 
 const productId = getProductIdFromURL();
