@@ -35,23 +35,26 @@
     </header>
 
 
-    <form action="" class="formCompra">
-        <h2>Agenda un reunión para realizar tu compra!</h2>
-
-        <div class="inputsForm">
+    <form action="" class="formCompra" id="form-container">
+        <h2>Agenda una reunión para realizar tu compra!</h2>
+    
+        <div class="inputsForm" id="myForm">
             <label for="nombre">Nombre:</label>
-            <input type="text" required>
+            <input type="text" id="nombre" required>
+    
             <label for="apellido">Apellido:</label>
-            <input type="text" required>
+            <input type="text" id="apellido" required>
+    
             <label for="tel">Teléfono:</label>
-            <input type="text" required>
-            <label for="email">Email</label>
-            <input type="text" required>
+            <input type="text" id="tel" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
         </div>
-
-        <button onclick="alert('Cita agregada')">Agendar cita</button>
-        
+    
+        <input type="submit" value="Enviar">
     </form>
+    
 
   <footer class="footerCompra">
         <section class="contac">
@@ -76,5 +79,6 @@
         </section>
 
     </footer>
+    <script src="../compra.js"></script>
 </body>
 </html>
