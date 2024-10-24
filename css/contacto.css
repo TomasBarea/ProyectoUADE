@@ -294,7 +294,8 @@ footer {
 
 .btnInicio p:hover {
     background-color: #30d21b;
-
+    transition: 0.7s ease;
+    transform: scale(1.03);
 
 }
 
