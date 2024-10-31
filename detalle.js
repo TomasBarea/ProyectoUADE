@@ -136,7 +136,7 @@ function renderProductDetail(id) {
     `;
 
     document.getElementById("back-btn").addEventListener("click", () => {
-        window.location.href = "../index.html";
+        window.location.href = "../index.html#modelos";
     });
     document.getElementById("comprar-btn").addEventListener("click",() =>{
         window.location.href = "../pages/compra.html";
