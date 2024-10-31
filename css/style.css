@@ -488,6 +488,19 @@ body {
 
 }
 
+#compraBtn{
+    background-color: #2bc016;
+    color: #ffff;
+    width: 300px;
+    height: 60px;
+    border-radius: 1.3rem;
+    border-color:#2bc016;
+    margin-top: 20px;
+    font-size:larger ;
+    cursor:  pointer;
+}
+
+
 .formCompra h2 {
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
