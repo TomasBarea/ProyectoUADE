@@ -55,18 +55,18 @@
 
         <section id="modelos">
             <div>
-
                 <h1>MODELOS</h1>
-
                 <div class="gralModelos">
-
-                    <div id="product-list" class="boxModelo"></div>
-                  
-                    <!-- <div id="product-detail" >              
-                      <button id="back-btn">Volver</button>
-                    </div> -->
+                    <div id="product-list" class="boxModelo">
+                        <div class="carrusel">
+                            <div class="carrusel-items" id="carrusel-items">
+                                <!-- Las tarjetas de productos se insertarán aquí -->
+                            </div>
+                            <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
+                            <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </section>
 
@@ -152,6 +152,7 @@
 
     </footer>
 <script src="./index.js"></script>
+<script src="./carousel.js"></script>
 </body>
 
 </html>

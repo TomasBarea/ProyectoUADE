@@ -146,3 +146,5 @@ function renderProductDetail(id) {
 const productId = getProductIdFromURL();
 console.log("ID obtenido:", productId);
 renderProductDetail(productId);
+
+

@@ -399,6 +399,72 @@ body {
     }
 }
 
+/* ////////////////////////////////////// */
+    /* CAROUSEL */
+
+    .carrusel {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .carrusel-items {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .carrusel-item {
+        min-width: 25%; /* 100% / 4 productos */
+        box-sizing: border-box;
+        padding: 10px; /* Espacio entre productos */
+    }
+    
+    .tarjeta {
+        border: 1px solid #000000; /* Borde de la tarjeta */
+        border-radius: 5px; /* Bordes redondeados */
+        padding: 15px; /* Espaciado interno */
+        text-align: center; /* Centrar texto */
+        color: #000000;
+
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            background-color: #2bc016;
+            width: 100%;
+
+        }
+
+    }
+    
+    .tarjeta img {
+        max-width: 100%; /* Hacer que la imagen no exceda el ancho de la tarjeta */
+        height:250px;/* Mantener la relación de aspecto */
+        object-fit: cover;
+    }
+    
+    .carrusel img {
+        width: 100%;
+        display: block;
+        
+    }
+    
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #2bc016;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .prev {
+        left: 15px;
+    }
+    
+    .next {
+        right: 15px;
+    }
+
 
 
 
