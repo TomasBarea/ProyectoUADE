@@ -432,28 +432,23 @@ body {
 .carrusel-items {
     display: flex;
     width: 92%;
-    transition: transform 0.9s ease;
+    transition: transform 0.5s ease;
     margin-bottom: 80px;
     margin-top: 20px;
+    
 }
 
 .carrusel-item {
     min-width: 25%;
-    /* 100% / 4 productos */
     box-sizing: border-box;
-    padding: 7px;
-    /* Espacio entre productos */
+    padding: 10px;
 }
 
 .tarjeta {
     border: 1px solid #7d7d7d82;
-    /* Borde de la tarjeta */
     border-radius: 5px;
-    /* Bordes redondeados */
     padding: 0px;
-    /* Espaciado interno */
     text-align: center;
-    /* Centrar texto */
     color: #000000;
     height: 100%;
     box-shadow: 1px 1px 10px 1px #343434a6;
@@ -488,9 +483,7 @@ body {
 .tarjeta img {
     /* border-radius: 5px; */
     max-width: 100%;
-    /* Hacer que la imagen no exceda el ancho de la tarjeta */
     height: 250px;
-    /* Mantener la relación de aspecto */
     object-fit: cover;
 }
 
