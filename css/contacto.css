@@ -196,7 +196,7 @@ body {
         margin-top: 20px;
         border: 0;
         cursor: pointer;
-        border-radius: 2rem;
+        border-radius: 2px;
     }
 
     button:hover {

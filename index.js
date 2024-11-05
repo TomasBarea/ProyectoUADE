@@ -74,11 +74,11 @@ function renderProductList() {
 
         productDiv.innerHTML = `
             <div class="tarjeta">
-                <h2>${product.Nombre}</h2>
                 <img src="${product.image}" alt="${product.Nombre}" />
+                <h2>${product.Nombre}</h2>
                 <p>Sector: ${product.Sector}</p>
                 <p>Precio: US$${product.Precio}</p>
-                <a href="/pages/detalle.html?id=${product.id}">Ver detalles</a>
+                <a href="/pages/detalle.html?id=${product.id}"><button>Ver detalles</button></a>
             </div>
         `;
 
