@@ -388,18 +388,18 @@ body {
 
 .gralModelos {
     font-family: "Montserrat", sans-serif;
-    /* background-color: #f4f4f4; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    margin-top: 40px;
-    padding: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
 } 
 
 
 .gralModelos h2 {
     font-size: 25px !important;
+    border-bottom: 1px solid #c9c9c9c1;
+    padding-bottom: 15px;
+    margin-top: 15px;
 }
 
 .gralModelos p {
@@ -417,7 +417,7 @@ body {
 
 .carousel {
     display: flex;
-    width: 92%;
+    width: 91%;
     transition: transform 0.9s ease;
     margin-bottom: 80px;
     margin-top: 20px;
@@ -425,24 +425,18 @@ body {
 
 .carrusel-item {
     min-width: 25%;
-    /* 100% / 4 productos */
-    box-sizing: border-box;
-    padding: 7px;
-    /* Espacio entre productos */
+    margin: 0 8px;
+
 }
 
 .tarjeta {
     border: 1px solid #7d7d7d82;
-    /* Borde de la tarjeta */
+    background-color: #ebebeb;
     border-radius: 5px;
-    /* Bordes redondeados */
     padding: 0px;
-    /* Espaciado interno */
     text-align: center;
-    /* Centrar texto */
     color: #000000;
     height: 100%;
-    box-shadow: 1px 1px 10px 1px #343434a6;
 
 
 }
@@ -466,17 +460,13 @@ body {
 
 .tarjeta button:hover {
     transform: scale(1.03);
-
     transition: 0.3s ease;
     background-color: #2ed318f3;
 }
 
 .tarjeta img {
-    /* border-radius: 5px; */
     max-width: 100%;
-    /* Hacer que la imagen no exceda el ancho de la tarjeta */
     height: 250px;
-    /* Mantener la relación de aspecto */
     object-fit: cover;
 }
 
@@ -486,28 +476,17 @@ body {
 
 }
 
-.prev,
-.next {
-    position: absolute;
-    top: 40%;
+
+
+.arrow {
     transform: translateY(-50%);
     background:none;
     color: black;
     border: none;
-    padding: 15px;
+    padding: 10px;
     font-size: 40px;
     cursor: pointer;
     z-index: 10;
-
-}
-
-
-.left {
-    left: 0px;
-}
-
-.right {
-    right: 0px;
 }
 
 .arrow:hover {
