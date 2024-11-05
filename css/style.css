@@ -228,12 +228,13 @@ body {
     justify-content: space-around;
     color: #000000;
     width: 90%;
-    height: 780px;
+    height: auto;
     border-radius: 6px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     margin-top: 100px;
     margin-left: 3%;
     margin-right: 3%;
+    margin-bottom: 20px;
 
     img {
         margin-left: 30px;
@@ -257,10 +258,11 @@ body {
         color: #fff;
         background-color: #2bc016;
         padding: 3%;
-        width: 100%;
+        width: 45%;
         font-size: 20px !important;
         font-family: "Montserrat", sans-serif;
         border: none;
+        cursor: pointer;
 
     }
 
@@ -378,12 +380,26 @@ body {
 
 
 
+
+
+/* --------------- */
+/* CARROUSEL MODELOS  */
+
+
 .gralModelos {
-    display: flex;
-    justify-content: space-between;
     font-family: "Montserrat", sans-serif;
+    /* background-color: #f4f4f4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 40px;
+    padding: 10px;
+} 
 
 
+.gralModelos h2 {
+    font-size: 25px !important;
 }
 
 .gralModelos p {
@@ -392,76 +408,50 @@ body {
     padding-left: 10px;
 }
 
-.gralModelos h2 {
-    /* text-align: left; */
-    /* padding-left: 20px; */
-    margin-top: 15px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #bbbbbbaf;
-}
 
-#product-list {
-    flex: 1;
-}
-
-#botones {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-
-    #back-btn {
-        cursor: pointer;
-    }
-
-    #comprar-btn {
-        cursor: pointer;
-    }
-}
-
-/* ////////////////////////////////////// */
-/* CAROUSEL */
-
-.carrusel {
+.carousel-container {
     position: relative;
+    width: 93%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
 }
 
-.carrusel-items {
+.carousel {
     display: flex;
-    width: 92%;
-    transition: transform 0.9s ease;
-    margin-bottom: 80px;
-    margin-top: 20px;
+    transition: transform 0.5s ease-in-out;
+
 }
 
 .carrusel-item {
-    min-width: 25%;
-    /* 100% / 4 productos */
-    box-sizing: border-box;
-    padding: 7px;
-    /* Espacio entre productos */
+    min-width: 24%; /* Mostrar 4 productos */
+    margin: 0 6px;
 }
 
 .tarjeta {
-    border: 1px solid #7d7d7d82;
-    /* Borde de la tarjeta */
-    border-radius: 5px;
-    /* Bordes redondeados */
+    background-color: rgb(243, 243, 243);
+    /* border: 1px solid #7d7d7d82; */
+    /* box-shadow: 1px 1px 10px 1px #898989a6; */
     padding: 0px;
-    /* Espaciado interno */
+    /* padding-bottom: 20px; */
     text-align: center;
-    /* Centrar texto */
-    color: #000000;
-    height: 100%;
-    box-shadow: 1px 1px 10px 1px #343434a6;
-
-
+    width: 100%;
 }
 
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    /* border-radius: 8px; */
+}
 
+.tarjeta h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.tarjeta p {
+    color: #666;
+    font-size: 1rem;
+}
 
 .tarjeta button {
     text-decoration: none;
@@ -469,7 +459,7 @@ body {
     background-color: #2bc016;
     width: 100%;
     font-family: "Montserrat", sans-serif;
-    padding: 6px;
+    padding: 9px;
     border: none;
     font-size: 15px;
     margin-bottom: -3px;
@@ -480,57 +470,37 @@ body {
 
 .tarjeta button:hover {
     transform: scale(1.03);
-    /* border-radius: 10px; */
+
     transition: 0.3s ease;
     background-color: #2ed318f3;
 }
 
-.tarjeta img {
-    /* border-radius: 5px; */
-    max-width: 100%;
-    /* Hacer que la imagen no exceda el ancho de la tarjeta */
-    height: 250px;
-    /* Mantener la relación de aspecto */
-    object-fit: cover;
-}
-
-.carrusel img {
-    width: 100%;
-    display: block;
-
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 40%;
+.arrow {
+    top: 50%;
     transform: translateY(-50%);
-    /* background-color: #2bc016; */
+    background:none;
+    color: black;
     border: none;
-    cursor: pointer;
-    background: none;
+    padding: 15px;
     font-size: 40px;
+    cursor: pointer;
+    z-index: 10;
 
 }
 
-.next:hover {
-    color: #2bc016;
-    transition: 0.4s ease;
+
+.left {
+    left: 0px;
 }
 
-.prev:hover {
-    color: #2bc016;
-    transition: 0.4s ease;
+.right {
+    right: 0px;
 }
 
-.prev {
-    left: 15px;
+.arrow:hover {
+color: #30b929;
+transition: 0.4s ease;
 }
-
-.next {
-    right: 15px;
-}
-
 
 
 
@@ -944,23 +914,20 @@ footer {
 }
 
 .btnInicio p {
-    background-color: #2bc016;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding:5px;
     border-radius: 2px;
-    margin-top: 12px;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-weight: 400;
+    margin: 17px
 }
 
 
 .btnInicio p:hover {
-    background-color: #30d21b;
+    color: #30d21b;
     transition: 0.7s ease;
-    transform: scale(1.03);
 
 
 }

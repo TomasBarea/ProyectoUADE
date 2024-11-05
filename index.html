@@ -47,8 +47,8 @@
     <main>
         <div class="videoPrincipal">
             <!-- <img src="/img/lambo21.jpg"> -->
-             <video autoplay loop muted >
-                <source src="/img/16120728-uhd_2158_3838_30fps.mp4" type="video/mp4">     
+            <video autoplay loop muted>
+                <source src="/img/16120728-uhd_2158_3838_30fps.mp4" type="video/mp4">
                 error
             </video>
         </div>
@@ -57,15 +57,14 @@
             <div>
                 <h1>MODELOS</h1>
                 <div class="gralModelos">
-                    <div id="product-list" class="boxModelo">
-                        <div class="carrusel">
-                            <div class="carrusel-items" id="carrusel-items">
-                                <!-- Las tarjetas de productos se insertarán aquí -->
-                            </div>
-                            <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
-                            <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
+                    <button class="arrow left" id="prev-btn">&#10094;</button>
+
+                    <div class="carousel-container">
+                        <div class="carousel" id="carrusel-items">
+                            <!-- Aquí se cargarán los productos con JS -->
                         </div>
                     </div>
+                    <button class="arrow right" id="next-btn">&#10095;</button>
                 </div>
             </div>
         </section>
@@ -75,11 +74,11 @@
             <div class="conteinerSede">
 
 
-                    <img class="fotoSede1" src="/img/sede5.jpg">
+                <img class="fotoSede1" src="/img/sede5.jpg">
 
 
 
-                    <img class="fotoSede2" src="/img/sede4.jpg">
+                <img class="fotoSede2" src="/img/sede4.jpg">
 
 
 
@@ -132,7 +131,7 @@
         <section class="contac">
             <div class="btnInicio">
                 <a href="#top">
-                    <p> Volver al Inicio.</p>
+                    <p>Volver al inicio ▲</p>
                 </a>
 
             </div>
@@ -151,8 +150,8 @@
         </section>
 
     </footer>
-<script src="./index.js"></script>
-<script src="./carousel.js"></script>
+    <script src="./index.js"></script>
+    <script src="./carousel.js"></script>
 </body>
 
 </html>

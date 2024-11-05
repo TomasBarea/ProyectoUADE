@@ -65,9 +65,16 @@ const products = [
     }
 ];
 
+
 const carruselItems = document.getElementById("carrusel-items");
 
+let currentIndex = 0;
+const itemsToShow = 4;
+const totalItems = products.length;
+
 function renderProductList() {
+    carruselItems.innerHTML = "";
+
     products.forEach((product) => {
         const productDiv = document.createElement("div");
         productDiv.classList.add("carrusel-item");
@@ -81,47 +88,32 @@ function renderProductList() {
                 <a href="/pages/detalle.html?id=${product.id}"><button>Ver detalles</button></a>
             </div>
         `;
-
         carruselItems.appendChild(productDiv);
     });
 
-    // Mostrar el primer slide al cargar
-    mostrarSlide(slideIndex);
+    updateCarousel();
+}
+function updateCarousel() {
+    const offset = -(currentIndex * (100 / itemsToShow));  
+    carruselItems.style.transform = `translateX(${offset}%)`;  
 }
 
-let slideIndex = 0;
-const itemsToShow = 4; // Número de productos a mostrar
-
-function cambiarSlide(n) {
-    mostrarSlide(slideIndex += n);
-}
-
-function mostrarSlide(n) {
-    const slides = document.getElementsByClassName("carrusel-item");
-    const totalSlides = slides.length;
-
-    // Ajustar el índice para que no se salga de los límites
-    if (n >= Math.ceil(totalSlides / itemsToShow)) { 
-        slideIndex = 0; 
+document.getElementById("prev-btn").addEventListener("click", () => {
+    if (currentIndex >= 2) {
+        currentIndex -= 2;
+    } else {
+        currentIndex = totalItems - itemsToShow;  
     }
-    if (n < 0) { 
-        slideIndex = Math.ceil(totalSlides / itemsToShow) - 1; 
+    updateCarousel();
+});
+
+document.getElementById("next-btn").addEventListener("click", () => {
+    if (currentIndex < totalItems - itemsToShow) {
+        currentIndex += 2;
+    } else {
+        currentIndex = 0;  
     }
+    updateCarousel();
+});
 
-    // Calcular el desplazamiento
-    const offset = -slideIndex * (100 / itemsToShow); 
-    carruselItems.style.transform = `translateX(${offset}%)`;
-
-    // Ocultar todos los elementos
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-
-    // Mostrar los elementos correspondientes al índice actual
-    for (let i = slideIndex * itemsToShow; i < Math.min((slideIndex + 1) * itemsToShow, totalSlides); i++) {
-        slides[i].style.display = "block";  
-    }
-}
-
-// Llama a la función para renderizar los productos
 renderProductList();
