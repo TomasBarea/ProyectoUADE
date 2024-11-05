@@ -57,11 +57,13 @@
             <div>
                 <h1>MODELOS</h1>
                 <div class="gralModelos">
-                    <button class="arrow left" id="prev-btn">&#10094;</button>
-
-                    <div class="carousel-container">
-                        <div class="carousel" id="carrusel-items">
-                            <!-- Aquí se cargarán los productos con JS -->
+                    <div id="product-list" class="boxModelo">
+                        <div class="carrusel">
+                            <div class="carrusel-items" id="carrusel-items">
+                                <!-- Las tarjetas de productos se insertarán aquí -->
+                            </div>
+                            <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
+                            <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
                         </div>
                     </div>
                     <button class="arrow right" id="next-btn">&#10095;</button>
