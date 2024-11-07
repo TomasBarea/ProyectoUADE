@@ -48,7 +48,7 @@ const products = [
         "HP": "+240hp",
         "Kilometros": "58.320 kilómetros",
         "Precio": "990.000,00",
-        "image": "porsche1.jpg"
+        "image": "porsche2.jpg"
     },
     {
         "id": 6,
@@ -58,7 +58,7 @@ const products = [
         "HP": "570hp",
         "Kilometros": "29.457 kilómetros",
         "Precio": "240.000,00",       
-        "image": "ferra.jpeg"
+        "image": "ferrariItalia.avif"
     },
     {
         "id": 7,
@@ -126,8 +126,8 @@ function renderProductDetail(id) {
             <p ><strong>Precio:</strong> US$${product.Precio}</p>
         </div>
         <div  id="botones">
-            <button id="back-btn">Volver a los modelos</button>
-            <button  id="comprar-btn">Comprar</button>
+            <a href="../index.html#modelos" ><button id="back-btn">Volver a los modelos</button></a>
+            <a href="../pages/compra.html" target="_blank"><button  id="comprar-btn">Comprar</button></a>
         </div>
         <div id="footer">
             <p>Este vehiculo es vendido por  <span>'Emerald Fusion Cars'</span> </p>
@@ -135,12 +135,12 @@ function renderProductDetail(id) {
     </div>
     `;
 
-    document.getElementById("back-btn").addEventListener("click", () => {
-        window.location.href = "../index.html#modelos";
-    });
-    document.getElementById("comprar-btn").addEventListener("click",() =>{
-        window.location.href = "../pages/compra.html";
-    })
+    // document.getElementById("back-btn").addEventListener("click", () => {
+    //     window.location.href = "../index.html#modelos";
+    // });
+    // document.getElementById("comprar-btn").addEventListener("click",() =>{
+    //     window.location.href = "../pages/compra.html";
+    // })
 }
 
 const productId = getProductIdFromURL();

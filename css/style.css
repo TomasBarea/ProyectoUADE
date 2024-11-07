@@ -237,9 +237,9 @@ body {
     margin-bottom: 20px;
 
     img {
-        margin-left: 30px;
+        margin-left: 20px;
         width: 100%;
-        height: 100%;
+        height: 700px;
         object-fit: cover;
 
 
@@ -253,64 +253,71 @@ body {
 
 
     button {
-        margin-top: 10px;
-        margin-right: 16px;
+        margin-top: 5px;
+        margin-right: 5px;
         color: #fff;
-        background-color: #2bc016;
-        padding: 3%;
-        width: 45%;
+        background: none;
+        color: #2bc016;
+        font-weight: 600;
+        padding: 5px;
         font-size: 20px !important;
         font-family: "Montserrat", sans-serif;
         border: none;
         cursor: pointer;
+        width: 100%;
+        text-align: left;
 
     }
 
     button:hover {
-        background-color: #30d21b;
+        /* background-color: #30d21b; */
         transform: scale(1.02);
         transition: 0.4s ease;
+        color: #30d61a;
     }
+
+
 }
 
 
 /* SECCION DE IMAGEN (PARTE IZQUIERDA) */
 
-#imagenDetail {
-    width: 50%;
-}
+/* #imagenDetail {
+    width: 100%;
+} */
 
 
 
 /* SECCION DE DATOS (PARTE DERECHA) */
 
 #detalleDetail {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
-    padding: 30px;
+    margin-left: 50px;
+    padding: 10px;
+    padding-top: 10%;
 
 
 
 }
 
 #detalleDetail h2 {
-    font-size: 60px;
+    font-size: 35px;
     color: #131313;
     font-family: "Montserrat", sans-serif;
     border-bottom: 3px solid #e2e2e2cb;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin: 0;
     margin-bottom: 8%;
 }
 
 #detalleDetail p {
-    margin: 14px;
+    margin: 10px;
     margin-left: 0;
-    font-size: 25px;
+    font-size: 20px;
     border-bottom: 3px solid #e2e2e2cb;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
     font-family: "Montserrat", sans-serif;
     color: #333333;
 
@@ -323,12 +330,13 @@ body {
 }
 
 #motor p {
-    width: 50%;
+    flex: 2, 1;
+
 }
 
 
 #precio p {
-    font-size: 40px;
+    font-size: 30px;
     border: none;
     margin-top: 8%;
     text-transform: uppercase;
@@ -340,7 +348,7 @@ body {
 #footer p {
     margin-top: 30px;
     border: none;
-    font-size: 23px;
+    font-size: 19px;
     color: #585858;
     font-family: "Montserrat", sans-serif;
 
@@ -351,13 +359,6 @@ body {
     font-weight: 600;
 }
 
-
-/* #product-detail:hover{
-    box-shadow: rgba(56, 56, 56, 0.664) 3px 15px 27px;
-    width: 430px;
-    background-color: #cccccce7;
-    transition: 0.6s; */
-/* } */
 
 
 
@@ -388,11 +389,11 @@ body {
 
 .gralModelos {
     font-family: "Montserrat", sans-serif;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-} 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 
 .gralModelos h2 {
@@ -480,7 +481,7 @@ body {
 
 .arrow {
     transform: translateY(-50%);
-    background:none;
+    background: none;
     color: black;
     border: none;
     padding: 10px;
@@ -490,8 +491,8 @@ body {
 }
 
 .arrow:hover {
-color: #30b929;
-transition: 0.4s ease;
+    color: #30b929;
+    transition: 0.4s ease;
 }
 
 
@@ -547,7 +548,7 @@ transition: 0.4s ease;
     display: flex;
     flex-direction: column;
     align-items: self-start;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     width: 100%;
     height: 400px;
     font-size: larger;
@@ -586,10 +587,10 @@ transition: 0.4s ease;
     background-color: #2bc016;
     color: #ffff;
     width: 300px;
-    height: 60px;
-    border-radius: 1.3rem;
+    height: 50px;
+    border-radius: 1rem;
     border-color: #2bc016;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: larger;
     cursor: pointer;
     border: 0;
@@ -600,18 +601,41 @@ transition: 0.4s ease;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     margin-bottom: 50px;
-    margin-top: 80px;
+    margin-top: 70px;
     font-size: 31px;
     text-align: center;
 
+
 }
 
-
+.formCompra p {
+    font-family: "Montserrat", sans-serif;
+text-align: center;
+margin-left: 20px;
+margin-right: 20px;
+}
 
 
 .footerCompra {
     margin-top: 45px;
 }
+
+.boxMensajeCompra {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.mensajeCompra {
+    color: #2bc016;
+}
+
+.boxMensajeCompra h2 {
+    margin: 10px;
+}
+
 
 /* SEDES */
 
@@ -639,7 +663,12 @@ transition: 0.4s ease;
     padding-bottom: 120px;
     padding-top: 30px;
     /* margin-bottom: 30px; */
+    
 
+}
+
+.sedes a {
+    text-decoration: none;
 }
 
 .sedes span {
@@ -691,6 +720,7 @@ transition: 0.4s ease;
 .segImagen img {
     width: 100%;
 }
+
 
 
 
@@ -770,7 +800,7 @@ transition: 0.4s ease;
 
 .secServ1 a {
     font-size: 17px;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: 130px;
     margin-right: 130px;
     display: flex;
@@ -859,7 +889,7 @@ transition: 0.4s ease;
 
 .secServ4 a {
     font-size: 17px;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: 130px;
     margin-right: 130px;
     display: flex;
@@ -909,7 +939,7 @@ footer {
     color: #fff;
     font-size: 20px;
     margin: 0;
-    padding:5px;
+    padding: 5px;
     border-radius: 2px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;

@@ -45,7 +45,7 @@ const products = [
         "Sector": "Superdeportivo",
         "Motor": "V8 aspirado de 4.5l",
         "Precio": "240.000,00",
-        "image": "./img/ferra.jpeg"
+        "image": "./img/ferrariItalia.avif"
     },
     {
         "id": 7,
@@ -117,3 +117,8 @@ document.getElementById("next-btn").addEventListener("click", () => {
 });
 
 renderProductList();
+
+
+
+
+

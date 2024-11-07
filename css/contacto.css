@@ -154,7 +154,7 @@ body {
 
 /* FORMULARIO ADENTRO DEL CONTACTO  */
 
-.form {
+#form {
 
     display: flex;
     flex-direction: column;
@@ -280,22 +280,21 @@ footer {
 }
 
 .btnInicio p {
-    background-color: #2bc016;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding:5px;
     border-radius: 2px;
-    margin-top: 12px;
     font-family: "Montserrat", sans-serif;
-
+    font-weight: 400;
+    margin: 17px
 }
 
 
 .btnInicio p:hover {
-    background-color: #30d21b;
+    color: #30d21b;
     transition: 0.7s ease;
-    transform: scale(1.03);
+
 
 }
 
