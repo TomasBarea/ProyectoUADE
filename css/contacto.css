@@ -457,6 +457,10 @@ footer {
     }
 
 
+    .titulo {
+        margin-right: 10px;
+    }
+
     .titulo p {
         font-size: 27px;
         margin: 10px;
