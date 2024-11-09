@@ -13,7 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="/img/logoPng.png">
+    
+    
+        <link rel="stylesheet" href="https://fontawesome.com/icons/instagram?f=brands&s=solid">
+
+
+
+    
+        <link rel="icon" type="image/png" href="/img/logoPng.png">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -24,7 +31,7 @@
         <nav class="nav">
 
             <div class="titulo">
-                <p>Emerald Fusion Cars</p>
+                <a href="/index.html"><p>Emerald Fusion Cars</p></a>
             </div>
 
             <div class="logotipo">
@@ -34,8 +41,11 @@
             </div>
 
 
-            <div class="links">
-                <ul>
+            <div class="boxLinks">
+                <div class="menuHamburguesa" id="menuToggle">
+                    &#9776; <!-- Icono de hamburguesa -->
+                </div>
+                <ul class="links" id="links">
                     <li><a href="#modelos">Modelos</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="/pages/sobreNos.html">Sobre la Empresa</a></li>
@@ -63,10 +73,9 @@
                         <button class="arrow left" id="prev-btn">&#10094;</button>
 
                         <div class="carousel-container">
-                            <div class="carousel" id="carrusel-items">
-                                <!-- Aquí se cargarán los productos con JS -->
-                            </div>
+                            <div id="carrusel-items" class="carousel"></div>
                         </div>
+                        
                         <button class="arrow right" id="next-btn">&#10095;</button>
                 </div>
             </div>
@@ -130,8 +139,7 @@
         </section>
     </main>
 
-    <footer>
-        <section class="contac">
+    <footer class="contact">
             <div class="btnInicio">
                 <a href="#top">
                     <p>Volver al inicio ▲</p>
@@ -142,15 +150,14 @@
                 <p>© 2024 Concesionaria de Autos. Todos los derechos reservados.</p>
             </div>
             <div class="logos">
-                <a id="yt" href="https://www.youtube.com/"><img src="/img/ytpng.png"></a>
-                <a id="tw" href="https://x.com/"><img src="/img/xpng.webp"></a>
-                <a id="ml" href="https://www.mercadolibre.com.ar/"><img src="/img/mlpng.png"></a>
-                <a id="ig" href="https://www.instagram.com/"><img src="/img/igpng.webp"></a>
-                <a id="fc" href="https://facebook.com/"><img src="/img/facepng.webp"></a>
-                <a id="wp" href="https://web.whatsapp.com/"><img src="/img/wpp2.png"></a>
+                <a id="yt" href="https://www.youtube.com/" target="_blank"><img src="/img/ytpng.png"></a>
+                <a id="tw" href="https://x.com/" target="_blank"><img src="/img/twitter-alt.png"></a>
+                <a id="ml" href="https://www.mercadolibre.com.ar/" target="_blank"><img src="/img/mlpng.png"></a>
+                <a id="ig" href="https://www.instagram.com/" target="_blank"><img src="/img/instagram_2111463.png"></a>
+                <a id="fc" href="https://facebook.com/" target="_blank"><img src="/img/facebook_2504903.png"></a>
+                <a id="wp" href="https://web.whatsapp.com/" target="_blank"><img src="/img/whatsapp_3536445.png"></a>
             </div>
 
-        </section>
 
     </footer>
     <script src="./index.js"></script>

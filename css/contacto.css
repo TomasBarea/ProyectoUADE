@@ -14,7 +14,12 @@ body {
 }
 
 
+a {
+    text-decoration: none;
+}
+
 /* NAV  */
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -26,6 +31,7 @@ body {
     left: 0;
     right: 0;
     padding-top: 0px;
+    z-index: 10;
 }
 
 
@@ -34,16 +40,7 @@ body {
     height: 55px;
     margin: 6px;
 
-
 }
-
-#hr {
-    margin-top: 35px;
-    margin-bottom: 50px;
-    border: 2px solid #2bc016;
-}
-
-
 
 .titulo p {
     font-family: Bona Nova SC;
@@ -54,26 +51,29 @@ body {
 }
 
 
+
+
 /* LINKS DEL NAV  */
 
-.links ul {
-    display: flex;
+.boxLinks ul {
     justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 
+
 }
 
-.links li {
+.boxLinks li {
     padding-inline: 2px;
     margin: 2px;
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;}
+    font-style: normal;
+}
 
-.links a {
+.boxLinks a {
     padding: 3px;
     transition: background-color 0.2s, color 0.2s;
     text-decoration: none;
@@ -81,10 +81,27 @@ body {
 
 }
 
-.links a:hover {
+.boxLinks a:hover {
     color: #2bc016;
 
 }
+
+
+
+/* menu hamburguesa  */
+
+.menuHamburguesa {
+    display: none;
+    /* Ocultar por defecto */
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    /* Mostrar enlaces en fila */
+    list-style: none;
+}
+
 
 
 
@@ -260,17 +277,39 @@ body {
 /* FOOTER  */
 
 
+
 footer {
     background-color: #242424;
-    bottom: 0;
-    width: 100%;
-    margin-top: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contac {
     display: flex;
     justify-content: space-around;
     font-size: 17px;
+}
+
+
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.logos img {
+    padding: 8px;
+
+
+
+}
+
+#yt img, #tw img, #ml img, #ig img, #fc img, #wp img {
+    width: 45px;
+    height: 40px;
+    padding-top: 17px;
 }
 
 
@@ -303,49 +342,6 @@ footer {
     color: #ffffff;
 }
 
-.logos {
-    display: flex;
-}
-
-.logos img {
-    padding: 6px;
-}
-
-#yt img {
-    width: 40px;
-    padding-top: 17px;
-}
-
-#tw img {
-    width: 65px;
-    height: 45px;
-    padding: 0px;
-    padding-top: 8px;
-}
-
-#ml img {
-    width: 40px;
-    padding-top: 17px;
-}
-
-#ig img {
-    height: 35px;
-    width: 35px;
-    padding-left: 15px;
-    padding-top: 13px;
-}
-
-#fc img {
-    height: 60px;
-    width: 60px;
-    padding-top: 0px;
-}
-
-#wp img {
-    height: 37px;
-    width: 37px;
-    padding-top: 12px;
-}
 
 .footerNote {
     color: #e0e0e0;
@@ -361,27 +357,71 @@ footer {
 
 @media (max-width: 1024px){
 
-    .btnInicio a p{
+    .header {
+        width: 1024px;
+    }
+
+    .nav {
+        width: 1024px;
+        padding-right: 15px;
+        justify-content: space-between;
+    }
+
+    .titulo {
+        margin-right: 40px;
+    }
+
+    #imgLogo {
+        width: 60px;
+        height: 50px;
+
+    }
+
+    #links {
+        margin-right: 10px;
+    }
+
+
+
+
+ footer {
+        height: 75px;
+    }
+
+
+    .btnInicio a p {
         width: 170px;
         margin: 0;
         margin-top: 25px;
+        font-size: 17px;
     }
 
-    .btnInicio{
+    .btnInicio {
         margin-left: 60px;
-        font-size: 10px;
+
     }
 
 
-.logos {
-    padding-top: 10px;
-    padding-right: 6px;
-}
+    .logos {
+        padding-right: 6px;
+        padding-left: 10px;
+    }
 
 
     .logos img {
-        padding: 3px;
+        padding: 5px;
 
+    }
+
+    #yt img,
+    #tw img,
+    #ml img,
+    #ig img,
+    #fc img,
+    #wp img {
+        width: 40px;
+        height: 35px;
+        padding-top: 20px;
     }
 
 
@@ -390,7 +430,194 @@ footer {
         margin-left: 20px;
         margin-right: 10px;
         text-align: center;
+        font-size: 15px;
+        color: #fff;
     }
+
+
+}
+
+
+@media (max-width: 375px) {
+    /* mobile */
+
+
+    .nav {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #imgLogo {
+        display: none;
+    }
+
+
+    .titulo p {
+        font-size: 27px;
+        margin: 10px;
+
+    }
+
+    .menuHamburguesa {
+        display: block;
+        font-size: 30px;
+        margin-right: 10px;
+        color: #fff;
+    }
+
+
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        background-color: #303030;
+        margin-top: 0;
+    }
+
+
+
+    .links li {
+        padding: 7px;
+
+    }
+
+
+
+    .links.show {
+        display: flex;
+        /* Mostrar enlaces al hacer clic */
+    }
+
+
+/* imagen principal  */
+
+
+.imgContUs {
+    height: 600px;
+}
+
+.imgContUs h3 {
+font-size: 55px;
+}
+
+.imgContUs p {
+    font-size: 18px;
+}
+
+
+/* form  */
+
+
+.contenedorContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    height: 1000px;
+}
+
+
+.contacto {
+    width: 100%
+}
+
+#form {
+    width: 90%;
+    padding: 20px;
+}
+
+.descripcion {
+    padding-bottom: 70px !important;
+}
+
+
+#form {
+    padding: 0;
+    padding-left: 15px;
+}
+
+.itemsBox {
+    width: 90%;
+    padding-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+/* footer  */
+
+footer {
+    height: 180px;
+}
+
+.contact {
+    justify-content: center;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.btnInicio {
+    margin: 0;
+    width: 95%;
+
+    
+}
+
+.btnInicio a p {
+    margin: 0;
+    width: 100%;
+}
+
+
+
+
+
+.logos {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* justify-content: center; */
+}
+
+#yt img,
+#tw img,
+#ml img,
+#ig img,
+#fc img,
+#wp img {
+    width: 40px;
+    height: 35px;
+    padding-top: 13px;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+
+.footerNote {
+    font-size: 12px;
+}
+
+
 
 
 

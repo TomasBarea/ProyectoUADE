@@ -66,11 +66,26 @@ const products = [
 ];
 
 
+
+document.getElementById('menuToggle').addEventListener('click', function () {
+    const links = document.getElementById('links');
+    links.classList.toggle('show'); // Alternar la clase para mostrar/ocultar
+});
+
+
+
 const carruselItems = document.getElementById("carrusel-items");
+const prevButton = document.getElementById("prev-btn");
+const nextButton = document.getElementById("next-btn");
 
 let currentIndex = 0;
-const itemsToShow = 4;
+let itemsToShow; // Calculado dinámicamente según el tamaño de la pantalla
 const totalItems = products.length;
+
+function calculateItemsToShow() {
+    // Cambia la cantidad de elementos mostrados según el ancho de la pantalla
+    itemsToShow = window.innerWidth <= 375 ? 1 : 4; // 1 para pantallas pequeñas, 4 para grandes
+}
 
 function renderProductList() {
     carruselItems.innerHTML = "";
@@ -93,32 +108,38 @@ function renderProductList() {
 
     updateCarousel();
 }
+
 function updateCarousel() {
-    const offset = -(currentIndex * (100 / itemsToShow));  
-    carruselItems.style.transform = `translateX(${offset}%)`;  
+    const itemWidth = carruselItems.firstElementChild.getBoundingClientRect().width;
+    const offset = -(currentIndex * itemWidth);  
+    carruselItems.style.transform = `translateX(${offset}px)`;  
 }
 
-document.getElementById("prev-btn").addEventListener("click", () => {
-    if (currentIndex >= 2) {
-        currentIndex -= 2;
-    } else {
-        currentIndex = totalItems - itemsToShow;  
-    }
-    updateCarousel();
-});
-
-document.getElementById("next-btn").addEventListener("click", () => {
+nextButton.addEventListener("click", () => {
     if (currentIndex < totalItems - itemsToShow) {
-        currentIndex += 2;
+        currentIndex++;
     } else {
         currentIndex = 0;  
     }
     updateCarousel();
 });
 
+prevButton.addEventListener("click", () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+    } else {
+        currentIndex = totalItems - itemsToShow;  
+    }
+    updateCarousel();
+});
+
+window.addEventListener('resize', () => {
+    calculateItemsToShow();
+    updateCarousel();
+});
+
+calculateItemsToShow();
 renderProductList();
-
-
 
 
 

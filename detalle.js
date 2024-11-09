@@ -128,6 +128,7 @@ function renderProductDetail(id) {
         <div  id="botones">
             <a href="../index.html#modelos" ><button id="back-btn">Volver a los modelos</button></a>
             <a href="../pages/compra.html" target="_blank"><button  id="comprar-btn">Comprar</button></a>
+
         </div>
         <div id="footer">
             <p>Este vehiculo es vendido por  <span>'Emerald Fusion Cars'</span> </p>

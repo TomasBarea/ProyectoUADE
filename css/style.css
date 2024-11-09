@@ -19,6 +19,11 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 
 /* NAV  */
 
@@ -57,16 +62,16 @@ body {
 
 /* LINKS DEL NAV  */
 
-.links ul {
-    display: flex;
+.boxLinks ul {
     justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 
+
 }
 
-.links li {
+.boxLinks li {
     padding-inline: 2px;
     margin: 2px;
     font-size: 15px;
@@ -75,7 +80,7 @@ body {
     font-style: normal;
 }
 
-.links a {
+.boxLinks a {
     padding: 3px;
     transition: background-color 0.2s, color 0.2s;
     text-decoration: none;
@@ -83,32 +88,29 @@ body {
 
 }
 
-.links a:hover {
+.boxLinks a:hover {
     color: #2bc016;
 
 }
 
 
 
+/* menu hamburguesa  */
 
-/* IMAGEN PRINCIPAL  */
+.menuHamburguesa {
+    display: none;
+    /* Ocultar por defecto */
+    cursor: pointer;
+}
 
-/* .imagenPrincipal {
-    width: 100vw;
-    max-width: 3000px;
-    min-width: 320px;
-    margin: auto;
-    margin-bottom: -10px;
-
+.links {
+    display: flex;
+    /* Mostrar enlaces en fila */
+    list-style: none;
 }
 
 
-.imagenPrincipal img {
-    width: 100%;
-    height: 750px;
-    object-fit: cover;
-
-} */
+/* VIDEO PRINCIPAL  */
 
 
 .videoPrincipal video {
@@ -609,9 +611,9 @@ body {
 
 .formCompra p {
     font-family: "Montserrat", sans-serif;
-text-align: center;
-margin-left: 20px;
-margin-right: 20px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -662,7 +664,7 @@ margin-right: 20px;
     padding-bottom: 120px;
     padding-top: 30px;
     /* margin-bottom: 30px; */
-    
+
 
 }
 
@@ -843,6 +845,7 @@ margin-right: 20px;
     margin-top: 80px;
     background-color: #ececec7d;
     margin-left: 0px;
+
 }
 
 
@@ -859,6 +862,11 @@ margin-right: 20px;
 
 /* SECCION 2 DE LA PARTE 2 DE SERVICIOS  */
 
+
+.secServ3{
+    display: flex;
+}
+
 .secServ4 {
     font-size: 22px;
     display: flex;
@@ -868,6 +876,7 @@ margin-right: 20px;
     margin-right: 30px;
     width: 60%;
     margin-top: 80px;
+    order: 2;
 }
 
 
@@ -920,7 +929,9 @@ margin-right: 20px;
 
 footer {
     background-color: #242424;
-    height: 70px
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contac {
@@ -960,47 +971,29 @@ footer {
 
 .logos {
     display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
 }
 
 .logos img {
-    padding: 6px;
+    padding: 8px;
+
+
+    /* margin-bottom: 20px; */
 }
 
-#yt img {
-    width: 40px;
-    padding-top: 17px;
-}
-
-#tw img {
-    width: 65px;
-    height: 45px;
-    padding: 0px;
-    padding-top: 8px;
-}
-
-#ml img {
-    width: 40px;
-    padding-top: 17px;
-}
-
-#ig img {
-    height: 35px;
-    width: 35px;
-    padding-left: 15px;
-    padding-top: 13px;
-}
-
-#fc img {
-    height: 60px;
-    width: 60px;
-    padding-top: 0px;
-}
-
+#yt img,
+#tw img,
+#ml img,
+#ig img,
+#fc img,
 #wp img {
-    height: 37px;
-    width: 37px;
-    padding-top: 12px;
+    width: 45px;
+    height: 40px;
+    padding-top: 17px;
 }
+
+
 
 .footerNote {
     margin-top: 8px;
@@ -1013,9 +1006,10 @@ footer {
 }
 
 
+
 /* ------------------------------------- RESPONSIVE  --------------------------------------------------------- */
 
-@media (min-width: 376px) and (max-width: 1024px){
+@media (min-width: 376px) and (max-width: 1024px) {
     /*laptop */
 
     html,
@@ -1030,6 +1024,21 @@ footer {
     .nav {
         width: 1024px;
         padding-right: 15px;
+        justify-content: space-between;
+    }
+
+    .titulo {
+        margin-right: 40px;
+    }
+
+    #imgLogo {
+        width: 60px;
+        height: 50px;
+
+    }
+
+    #links {
+        margin-right: 10px;
     }
 
     .sec1 {
@@ -1053,6 +1062,7 @@ footer {
         /* height: 700px; */
         h2 {
             margin-left: 15px;
+            
         }
 
         p {
@@ -1069,11 +1079,13 @@ footer {
 
     .secServ1 {
         margin: 0;
+        justify-content: center;
 
         a {
             padding: 20px;
             margin: 35px;
         }
+
     }
 
     .divServ2 {
@@ -1094,6 +1106,7 @@ footer {
 
     .secServ4 {
         margin: 0;
+        justify-content: center;
 
         p {
             padding: 10px;
@@ -1113,6 +1126,16 @@ footer {
         margin-top: 15px;
     }
 
+
+
+    .carrusel-item {
+        min-width: 25%;
+        margin: 10px;
+        margin-right: 0px;
+    }
+
+
+
     .arrow {
         transform: translateY(-50%);
         background: none;
@@ -1128,60 +1151,504 @@ footer {
         color: #30b929;
         transition: 0.4s ease;
     }
-.formCompra {
-    width: 60%;
+
+    .formCompra {
+        width: 60%;
+        height: 50%;
+
+    }
+
+    .formCompra h2 {
+        font-size: 27px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+
+.inputsForm {
+    justify-content: center;
+}
+
+
+    .formCompra input {
+        padding: 8px;
+        margin-bottom: 25px;
+    }
+
+    .formCompra label {
+        font-size: 17px;
+    }
+
+
+    #compraBtn {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .boxMensajeCompra {
+        width: 90%;
+        margin-top: 30%;
+        margin-bottom: 30%;
+        height: 50%;
+    }
+
+
+
+
+    footer {
+        height: 75px;
+    }
+
+
+    .btnInicio a p {
+        width: 170px;
+        margin: 0;
+        margin-top: 25px;
+        font-size: 17px;
+    }
+
+    .btnInicio {
+        margin-left: 60px;
+
+    }
+
+
+    .logos {
+        padding-right: 6px;
+        padding-left: 10px;
+    }
+
+
+    .logos img {
+        padding: 5px;
+
+    }
+
+    #yt img,
+    #tw img,
+    #ml img,
+    #ig img,
+    #fc img,
+    #wp img {
+        width: 40px;
+        height: 35px;
+        padding-top: 20px;
+    }
+
+
+
+    .footerNote p {
+        margin-left: 20px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* mobile */
+
+
+
+    .nav {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #imgLogo {
+        display: none;
+    }
+
+
+    .titulo p {
+        font-size: 27px;
+        margin: 10px;
+
+    }
+
+    .menuHamburguesa {
+        display: block;
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        background-color: #303030;
+        margin-top: 0;
+    }
+
+
+
+    .links li {
+        padding: 7px;
+
+    }
+
+
+
+    .links.show {
+        display: flex;
+        /* Mostrar enlaces al hacer clic */
+    }
+
+
+    .videoPrincipal video {
+        height: 700px;
+    }
+
+
+    #modelos h1,
+    .sedes h1,
+    .sh1 {
+        font-size: 40px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+
+    /* carrusel  */
+
+
+    .product-list {
+        margin-top: 20px;
+
+    }
+
+
+    .carousel-container {
+        width: 85%;
+        margin-top: 0;
+    }
+
+
+    .carrusel-item {
+        min-width: 100%;
+        margin: 0px;
+        margin-right: 0px;
+    }
+
+    .carousel {
+        width: 100%;
+        /* Ajustar el ancho del carrusel */
+        height: 500px;
+
+    }
+
+    .tarjeta img {
+        height: auto;
+        /* Ajustar la altura de la imagen */
+    }
+
+
+    .arrow {
+        font-size: 30px;
+        padding: 5px;
+        transform: translateY(-80%);
+        color: #474747;
+
+    }
+
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-color: #bebebe;
+    }
+
+    .tarjeta h2 {
+        margin-top: 0px;
+    }
+
+    .tarjeta img {
+        height: 50%;
+    }
+
+
+/* seg imagen  */
+
+
+.segImagen {
+    margin-top: 40px;
+}
+
+
+
+
+
+    /* sedes  */
+
+    .sedes h1 {
+        font-size: 30px;
+    }
+
+    .sedes p {
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+
+
+    .conteinerSede {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+
+    }
+
+
+    .fotoSede1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .fotoSede2 {
+        width: 90%;
+    }
+
+
+
+/* servicios */
+
+
+#servicios {
+    padding-bottom: 50px;
+}
+
+
+/* seccion turno  */
+
+
+    .divServ2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+
+    }
+
+    .secServ1 {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .secServ1 p {
+        font-size: 17px;
+    }
+
+    .secServ2 img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        
+    }
+
+    .secServ1 a {
+        padding: 10px;
+        margin: 20px;
+        font-size: 14px;
+    }
+
+
+/* seccion reparacion  */
+
+
+.divServ3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    order: 2;
+    margin-top: 50px;
+
 
 }
 
-.formCompra h2 {
-    font-size: 27px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-
-
-
-footer {
-    height: 75px;
-}
-
-
-.btnInicio a p{
-    width: 170px;
+.secServ4 {
+    width: 100%;
     margin: 0;
-    margin-top: 25px;
+    margin-top: 20px;
+    order: 1;
+}
+
+.secServ4 p {
     font-size: 17px;
 }
 
-.btnInicio{
-    margin-left: 60px;
+.secServ3 {
+    order:2;
+}
 
+.secServ3 img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.secServ4 h1 {
+    margin-top: 20px;
+}
+
+.secServ4 a {
+    padding: 10px;
+    margin: 20px;
+    font-size: 14px;
 }
 
 
-.logos {
-padding-top: 10px;
-padding-right: 6px;
+
+/* footer  */
+
+
+    footer {
+        height: 180px;
+    }
+
+    .contact {
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+
+    .btnInicio {
+        margin: 0;
+    }
+
+    .btnInicio p {
+        margin: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+
+
+    .logos {
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #yt img,
+    #tw img,
+    #ml img,
+    #ig img,
+    #fc img,
+    #wp img {
+        width: 40px;
+        height: 35px;
+        padding-top: 13px;
+    }
+
+
+    .contact {
+        display: flex;
+        flex-direction: column ;
+        font-size: 10px;
+    }
+
+
+    .footerNote {
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+/* detalle  */
+
+
+#product-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0;
+    margin-left: 8px;
+    margin-top: 50px;
 }
 
 
-.logos img {
-    padding: 2px;
-    padding-bottom: 0px;
 
+
+#product-detail img{
+    width: 100%;
+    height: 240px;
+    margin: 0;
 }
 
 
-
-.footerNote p {
-    margin-left: 20px;
-    margin-right: 10px;
-    text-align: center;
-    font-size: 15px;
-}
+#product-detail button {
+    font-size: 18px !important;
 }
 
-/* @media (max-width: 376px){
-  
-} */
+#detalleDetail {
+    width: 95%;
+    margin: 0;
+}
+
+#footer p {
+    font-size: 16px;
+}
+
+
+/* compra  */
+
+.formCompra {
+    width: 90%;
+    margin: 15px;
+    height: 50%;
+}
+
+.formCompra h2 {
+    font-size: 20px;
+}
+
+
+.formCompra input {
+    padding: 8px;
+    margin-bottom: 20px;
+    /* width: 97%; */
+}
+
+
+.inputsForm {
+    padding: 0;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#compraBtn {
+    width: 50%;
+    height: 44px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+
+}
+
+.boxMensajeCompra {
+    width: 90%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    height: 50%;
+}
+
+}
