@@ -33,3 +33,6 @@ Organigrama de página web:
 
 
 ![image](https://github.com/user-attachments/assets/4dc2da9c-a88e-4691-8759-886a5c3cce84)
+
+
+_Responisve_: 1024 px (Laptop) y 375px (Mobile M)
