@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
+
 <body class="bodyCompra">
     <header class="header">
         <nav class="nav">
 
             <div class="titulo">
-                <a href="/index.html"><p>Emerald Fusion Cars</p></a>            </div>
+                <a href="/index.html">
+                    <p>Emerald Fusion Cars</p>
+                </a>
+            </div>
 
             <div class="logotipo">
 
@@ -38,55 +43,58 @@
         </nav>
     </header>
 
+    <main id="main">
+        <form action="" class="formCompra" id="form-container">
+            <h2>¡Agenda una reunión para realizar tu compra!</h2>
 
-    <form action="" class="formCompra" id="form-container">
-        <h2>¡Agenda una reunión para realizar tu compra!</h2>
-    
-        <div class="inputsForm" id="myForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required>
-    
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" required>
-    
-            <label for="tel">Teléfono:</label>
-            <input type="text" id="tel" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-        </div>
-    
-        <input type="submit" value="Enviar" id="compraBtn">
-    </form>
-    
-    <p id="error" style="color:red;"></p>
-    
+            <div class="inputsForm" id="myForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
 
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required>
 
-    
+                <label for="tel">Teléfono:</label>
+                <input type="text" id="tel" required>
 
-    <footer class="contact">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
 
-        <div class="btnInicio">
-            <a href="../index.html">
-                <p> Volver al inicio ▲</p>
-            </a>
+            <input type="submit" value="Enviar" id="compraBtn">
+        </form>
 
-        </div>
-        <div class="footerNote">
-            <p>© 2024 Concesionaria de Autos. Todos los derechos reservados.</p>
-        </div>
-        <div class="logos">
-            <a id="yt" href="https://www.youtube.com/" target="_blank"><img src="/img/ytpng.png"></a>
-            <a id="tw" href="https://x.com/" target="_blank"><img src="/img/twitter-alt.png"></a>
-            <a id="ml" href="https://www.mercadolibre.com.ar/" target="_blank"><img src="/img/mlpng.png"></a>
-            <a id="ig" href="https://www.instagram.com/" target="_blank"><img src="/img/instagram_2111463.png"></a>
-            <a id="fc" href="https://facebook.com/" target="_blank"><img src="/img/facebook_2504903.png"></a>
-            <a id="wp" href="https://web.whatsapp.com/" target="_blank"><img src="/img/whatsapp_3536445.png"></a>
-        </div>
+        <p id="error" style="color:red;"></p>
 
 
-    </footer>
+
+
+
+        <footer class="contact">
+
+            <div class="btnInicio">
+                <a href="../index.html">
+                    <p> Volver al inicio ▲</p>
+                </a>
+
+            </div>
+            <div class="footerNote">
+                <p>© 2024 Concesionaria de Autos. Todos los derechos reservados.</p>
+            </div>
+            <div class="logos">
+                <a id="yt" href="https://www.youtube.com/" target="_blank"><img src="/img/ytpng.png"></a>
+                <a id="tw" href="https://x.com/" target="_blank"><img src="/img/twitter-alt.png"></a>
+                <a id="ml" href="https://www.mercadolibre.com.ar/" target="_blank"><img src="/img/mlpng.png"></a>
+                <a id="ig" href="https://www.instagram.com/" target="_blank"><img src="/img/instagram_2111463.png"></a>
+                <a id="fc" href="https://facebook.com/" target="_blank"><img src="/img/facebook_2504903.png"></a>
+                <a id="wp" href="https://web.whatsapp.com/" target="_blank"><img src="/img/whatsapp_3536445.png"></a>
+            </div>
+
+
+        </footer>
+
+    </main>
     <script src="/compra.js"></script>
 </body>
+
 </html>

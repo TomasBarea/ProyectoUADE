@@ -54,6 +54,14 @@ a {
     font-size: 30px;
     color: #ffffff;
     margin: 20px;
+    padding: 5px 0px;
+
+}
+
+.titulo p:hover {
+    color: #2ac016e0;
+    transition: 0.6s ease;
+
 
 }
 
@@ -81,7 +89,7 @@ a {
 }
 
 .boxLinks a {
-    padding: 3px;
+    padding: 7px 3px;
     transition: background-color 0.2s, color 0.2s;
     text-decoration: none;
     color: #ffffff;
@@ -90,6 +98,9 @@ a {
 
 .boxLinks a:hover {
     color: #2bc016;
+    border-bottom: 1px solid #2bc016;
+    transition: 0.3s ease;
+
 
 }
 
@@ -115,9 +126,8 @@ a {
 
 .videoPrincipal video {
     width: 100%;
-    /* height: 100%; */
-    height: 1050px;
     object-fit: cover;
+    height: 1050px;
     margin-top: -20%;
 
 }
@@ -626,6 +636,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 
 
@@ -1193,6 +1204,25 @@ footer {
     }
 
 
+    .product-detail{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    #product-detail {
+        padding: 10px;
+    }
+
+    #imagenDetail {
+        width: 80%;
+        margin: 0;
+    }
+
+    #imagenDetail img {
+        margin: 0;
+    }
+
 
 
     footer {
@@ -1251,12 +1281,13 @@ footer {
 
 
     .nav {
-        position: relative;
+        position: fixed;
         width: 100%;
         height: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
 
     }
 
@@ -1275,6 +1306,7 @@ footer {
         display: block;
         font-size: 30px;
         margin-right: 10px;
+        
     }
 
 
@@ -1288,6 +1320,7 @@ footer {
         width: 100%;
         background-color: #303030;
         margin-top: 0;
+        
     }
 
 
@@ -1301,12 +1334,17 @@ footer {
 
     .links.show {
         display: flex;
-        /* Mostrar enlaces al hacer clic */
     }
+
+    .blur {
+        filter: blur(3px);
+        }
+
+
 
 
     .videoPrincipal video {
-        height: 700px;
+        height: 800px;
     }
 
 
@@ -1580,7 +1618,8 @@ footer {
     padding: 10px;
     margin: 0;
     margin-left: 8px;
-    margin-top: 50px;
+    margin-top: 120px;
+    margin-bottom: 50px;
 }
 
 
@@ -1610,8 +1649,9 @@ footer {
 /* compra  */
 
 .formCompra {
-    width: 90%;
+    width: 91%;
     margin: 15px;
+    margin-top: 140px;
     height: 50%;
 }
 
@@ -1645,7 +1685,7 @@ footer {
 }
 
 .boxMensajeCompra {
-    width: 90%;
+    width: 100%;
     margin-top: 30%;
     margin-bottom: 30%;
     height: 50%;

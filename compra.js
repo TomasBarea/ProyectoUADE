@@ -23,10 +23,10 @@ $(document).ready(function() {
           // Mostrar mensaje de agradecimiento
           event.preventDefault(); // Evitar el envío por defecto para mostrar el mensaje personalizado
           $('#form-container').html(`
-              <div class="boxMensajeCompra">
-                  <h2 class="mensajeCompra">¡Gracias por agendar una reunión!</h2>
-                  <p>Nos pondremos en contacto contigo pronto para coordinar la reunión.</p>
-              </div>
+            <main id="main" class="boxMensajeCompra">
+                <h2 class="mensajeCompra">¡Gracias por agendar una reunión!</h2>
+                <p>Nos pondremos en contacto contigo pronto para coordinar la reunión.</p>
+            </main>
           `);
       }
   });
@@ -34,8 +34,8 @@ $(document).ready(function() {
 
 
 
-
 document.getElementById('menuToggle').addEventListener('click', function () {
-  const links = document.getElementById('links');
-  links.classList.toggle('show'); // Alternar la clase para mostrar/ocultar
+    const links = document.getElementById('links');
+    links.classList.toggle('show'); 
+    $('#main').toggleClass('blur');
 });

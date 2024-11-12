@@ -47,6 +47,14 @@ a {
     font-size: 30px;
     color: #ffffff;
     margin: 20px;
+    padding: 5px 0px;
+
+}
+
+.titulo p:hover {
+    color: #2ac016e0;
+    transition: 0.6s ease;
+
 
 }
 
@@ -74,7 +82,7 @@ a {
 }
 
 .boxLinks a {
-    padding: 3px;
+    padding: 7px 3px;
     transition: background-color 0.2s, color 0.2s;
     text-decoration: none;
     color: #ffffff;
@@ -83,6 +91,9 @@ a {
 
 .boxLinks a:hover {
     color: #2bc016;
+    border-bottom: 1px solid #2bc016;
+    transition: 0.3s ease;
+
 
 }
 
@@ -443,7 +454,7 @@ footer {
 
 
     .nav {
-        position: relative;
+        position: fixed;
         width: 100%;
         height: 80px;
         display: flex;
@@ -500,6 +511,12 @@ footer {
         display: flex;
         /* Mostrar enlaces al hacer clic */
     }
+
+
+    .blur {
+        filter: blur(3px);
+        }
+
 
 
 /* imagen principal  */

@@ -69,8 +69,11 @@ const products = [
 
 document.getElementById('menuToggle').addEventListener('click', function () {
     const links = document.getElementById('links');
-    links.classList.toggle('show'); // Alternar la clase para mostrar/ocultar
+    links.classList.toggle('show'); 
+    $('#main').toggleClass('blur');
 });
+
+
 
 
 
@@ -79,12 +82,11 @@ const prevButton = document.getElementById("prev-btn");
 const nextButton = document.getElementById("next-btn");
 
 let currentIndex = 0;
-let itemsToShow; // Calculado dinámicamente según el tamaño de la pantalla
+let itemsToShow; 
 const totalItems = products.length;
 
 function calculateItemsToShow() {
-    // Cambia la cantidad de elementos mostrados según el ancho de la pantalla
-    itemsToShow = window.innerWidth <= 375 ? 1 : 4; // 1 para pantallas pequeñas, 4 para grandes
+    itemsToShow = window.innerWidth <= 375 ? 1 : 4; 
 }
 
 function renderProductList() {

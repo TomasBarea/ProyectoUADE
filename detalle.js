@@ -111,41 +111,47 @@ function renderProductDetail(id) {
     }
 
     productDetail.innerHTML = `
-<div id="imagenDetail">
-        <img src="../img/${product.image}" alt="${product.Nombre}" width="300" /> 
-    </div>
-    <div id="detalleDetail">
-        <h2>${product.Nombre}</h2>
-        <p><strong>Sector:</strong> ${product.Sector}</p>
-        <div id="motor">
-            <p><strong>Motor:</strong> ${product.Motor}</p>
-            <p><strong>HP:</strong> ${product.HP}</p>
+    <main id="main" class="product-detail">
+    <div id="imagenDetail">
+            <img src="../img/${product.image}" alt="${product.Nombre}" width="300" /> 
         </div>
-        <p><strong>Kilometros:</strong> ${product.Kilometros}</p>
-        <div id="precio">
-            <p ><strong>Precio:</strong> US$${product.Precio}</p>
-        </div>
-        <div  id="botones">
-            <a href="../index.html#modelos" ><button id="back-btn">Volver a los modelos</button></a>
-            <a href="../pages/compra.html" target="_blank"><button  id="comprar-btn">Comprar</button></a>
+        <div id="detalleDetail">
+            <h2>${product.Nombre}</h2>
+            <p><strong>Sector:</strong> ${product.Sector}</p>
+            <div id="motor">
+                <p><strong>Motor:</strong> ${product.Motor}</p>
+                <p><strong>HP:</strong> ${product.HP}</p>
+            </div>
+            <p><strong>Kilometros:</strong> ${product.Kilometros}</p>
+            <div id="precio">
+                <p ><strong>Precio:</strong> US$${product.Precio}</p>
+            </div>
+            <div  id="botones">
+                <a href="../index.html#modelos" ><button id="back-btn">Volver a los modelos</button></a>
+                <a href="../pages/compra.html" target="_blank"><button  id="comprar-btn">Comprar</button></a>
 
+            </div>
+            <div id="footer">
+                <p>Este vehiculo es vendido por  <span>'Emerald Fusion Cars'</span> </p>
+            </div>
         </div>
-        <div id="footer">
-            <p>Este vehiculo es vendido por  <span>'Emerald Fusion Cars'</span> </p>
-        </div>
-    </div>
+    </main>
     `;
 
-    // document.getElementById("back-btn").addEventListener("click", () => {
-    //     window.location.href = "../index.html#modelos";
-    // });
-    // document.getElementById("comprar-btn").addEventListener("click",() =>{
-    //     window.location.href = "../pages/compra.html";
-    // })
 }
 
 const productId = getProductIdFromURL();
 console.log("ID obtenido:", productId);
 renderProductDetail(productId);
+
+
+
+
+
+document.getElementById('menuToggle').addEventListener('click', function () {
+    const links = document.getElementById('links');
+    links.classList.toggle('show'); 
+    $('#main').toggleClass('blur');
+});
 
 
