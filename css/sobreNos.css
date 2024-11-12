@@ -348,6 +348,7 @@ footer {
     height: 70px;
     display: flex;
     justify-content: space-between;
+ 
 }
 
 .contac {
@@ -502,6 +503,10 @@ footer {
     .sucursal3 img {
         width: 300px;
         height: 300px;
+    }
+
+    .sucursal1, .sucursal2, .sucursal3 {
+        padding: 0px 30px;
     }
 
 
