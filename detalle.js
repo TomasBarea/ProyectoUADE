@@ -84,7 +84,7 @@ const products = [
 
 
 
-// Función para obtener parámetros de la URL
+
 console.log("Script cargado");
 
 function getProductIdFromURL() {

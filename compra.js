@@ -5,23 +5,23 @@ $(document).ready(function() {
       let formularioValido = true;
       let mensajeError = '';
 
-      // Validar campos requeridos
+
       $('#myForm').find('input[required]').each(function() {
           if ($(this).val().trim() === '') {
               formularioValido = false;
               mensajeError = 'Por favor, completa todos los campos.';
-              return false; // Detener la iteración si hay un campo vacío
+              return false; 
           }
       });
 
       if (!formularioValido) {
-          event.preventDefault(); // Evitar envío si hay errores
+          event.preventDefault(); 
           $('#error').text(mensajeError);
       } else {
-          $('#error').text(''); // Limpiar mensaje de error
+          $('#error').text(''); 
 
-          // Mostrar mensaje de agradecimiento
-          event.preventDefault(); // Evitar el envío por defecto para mostrar el mensaje personalizado
+         
+          event.preventDefault(); 
           $('#form-container').html(`
             <main id="main" class="boxMensajeCompra">
                 <h2 class="mensajeCompra">¡Gracias por agendar una reunión!</h2>
