@@ -109,7 +109,6 @@ a {
 
 .links {
     display: flex;
-    /* Mostrar enlaces en fila */
     list-style: none;
 }
 
@@ -509,7 +508,7 @@ footer {
 
     .links.show {
         display: flex;
-        /* Mostrar enlaces al hacer clic */
+
     }
 
 
@@ -612,7 +611,7 @@ footer {
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
-    /* justify-content: center; */
+
 }
 
 #yt img,

@@ -110,13 +110,11 @@ a {
 
 .menuHamburguesa {
     display: none;
-    /* Ocultar por defecto */
     cursor: pointer;
 }
 
 .links {
     display: flex;
-    /* Mostrar enlaces en fila */
     list-style: none;
 }
 
@@ -283,7 +281,6 @@ a {
     }
 
     button:hover {
-        /* background-color: #30d21b; */
         transform: scale(1.02);
         transition: 0.4s ease;
         color: #30d61a;
@@ -293,11 +290,6 @@ a {
 }
 
 
-/* SECCION DE IMAGEN (PARTE IZQUIERDA) */
-
-/* #imagenDetail {
-    width: 100%;
-} */
 
 
 
@@ -383,7 +375,7 @@ a {
 
 
 #product-detail {
-    /* display: none;  */
+
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
@@ -395,7 +387,7 @@ a {
 
 #product-detail.active {
     display: block;
-    /* Mostrar cuando esté activo */
+
 }
 
 
@@ -522,7 +514,7 @@ a {
 .bodyCompra {
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/img/conce2.jpg);
-
+    margin-bottom: 0;
 }
 
 
@@ -578,7 +570,6 @@ a {
     input {
         border-radius: 8px;
         width: 80%;
-        /* height: 25px; */
         border: 0;
         margin-bottom: 35px;
         margin-top: 8px;
@@ -635,8 +626,9 @@ a {
 }
 
 
-.footerCompra {
+.contact {
     margin-top: 45px;
+    bottom: 0;
 }
 
 .boxMensajeCompra {
@@ -682,7 +674,7 @@ a {
     font-family: "Montserrat", sans-serif;
     padding-bottom: 120px;
     padding-top: 30px;
-    /* margin-bottom: 30px; */
+
 
 
 }
@@ -882,7 +874,7 @@ a {
 /* SECCION 2 DE LA PARTE 2 DE SERVICIOS  */
 
 
-.secServ3{
+.secServ3 {
     display: flex;
 }
 
@@ -997,8 +989,6 @@ footer {
 .logos img {
     padding: 8px;
 
-
-    /* margin-bottom: 20px; */
 }
 
 #yt img,
@@ -1081,7 +1071,7 @@ footer {
         /* height: 700px; */
         h2 {
             margin-left: 15px;
-            
+
         }
 
         p {
@@ -1174,6 +1164,7 @@ footer {
     .formCompra {
         width: 60%;
         height: 50%;
+        margin-top: 20%;
 
     }
 
@@ -1184,9 +1175,17 @@ footer {
         margin-bottom: 20px;
     }
 
-.inputsForm {
-    justify-content: center;
-}
+    .inputsForm {
+        justify-content: center;
+    }
+
+    .contact {
+        margin-top: 10%;
+        bottom: 0;
+    }
+
+
+
 
 
     .formCompra input {
@@ -1212,7 +1211,7 @@ footer {
     }
 
 
-    .product-detail{
+    .product-detail {
         display: flex;
         flex-direction: row;
     }
@@ -1295,7 +1294,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
+
 
     }
 
@@ -1314,7 +1313,7 @@ footer {
         display: block;
         font-size: 30px;
         margin-right: 10px;
-        
+
     }
 
 
@@ -1328,7 +1327,7 @@ footer {
         width: 100%;
         background-color: #303030;
         margin-top: 0;
-        
+
     }
 
 
@@ -1346,7 +1345,7 @@ footer {
 
     .blur {
         filter: blur(3px);
-        }
+    }
 
 
 
@@ -1388,14 +1387,13 @@ footer {
 
     .carousel {
         width: 100%;
-        /* Ajustar el ancho del carrusel */
         height: 500px;
 
     }
 
     .tarjeta img {
         height: auto;
-        /* Ajustar la altura de la imagen */
+
     }
 
 
@@ -1411,7 +1409,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-color: #bebebe;
+        border-color: #bebebeaf;
     }
 
     .tarjeta h2 {
@@ -1423,12 +1421,12 @@ footer {
     }
 
 
-/* seg imagen  */
+    /* seg imagen  */
 
 
-.segImagen {
-    margin-top: 40px;
-}
+    .segImagen {
+        margin-top: 40px;
+    }
 
 
 
@@ -1465,15 +1463,15 @@ footer {
 
 
 
-/* servicios */
+    /* servicios */
 
 
-#servicios {
-    padding-bottom: 50px;
-}
+    #servicios {
+        padding-bottom: 50px;
+    }
 
 
-/* seccion turno  */
+    /* seccion turno  */
 
 
     .divServ2 {
@@ -1499,7 +1497,7 @@ footer {
         margin: 0;
         margin-top: 50px;
         margin-bottom: 20px;
-        
+
     }
 
     .secServ1 a {
@@ -1509,55 +1507,55 @@ footer {
     }
 
 
-/* seccion reparacion  */
+    /* seccion reparacion  */
 
 
-.divServ3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    order: 2;
-    margin-top: 50px;
+    .divServ3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        order: 2;
+        margin-top: 50px;
 
 
-}
+    }
 
-.secServ4 {
-    width: 100%;
-    margin: 0;
-    margin-top: 20px;
-    order: 1;
-}
+    .secServ4 {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        order: 1;
+    }
 
-.secServ4 p {
-    font-size: 17px;
-}
+    .secServ4 p {
+        font-size: 17px;
+    }
 
-.secServ3 {
-    order:2;
-}
+    .secServ3 {
+        order: 2;
+    }
 
-.secServ3 img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    margin-top: 50px;
-}
+    .secServ3 img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-top: 50px;
+    }
 
-.secServ4 h1 {
-    margin-top: 20px;
-}
+    .secServ4 h1 {
+        margin-top: 20px;
+    }
 
-.secServ4 a {
-    padding: 10px;
-    margin: 20px;
-    font-size: 14px;
-}
+    .secServ4 a {
+        padding: 10px;
+        margin: 20px;
+        font-size: 14px;
+    }
 
 
 
-/* footer  */
+    /* footer  */
 
 
     footer {
@@ -1606,7 +1604,7 @@ footer {
 
     .contact {
         display: flex;
-        flex-direction: column ;
+        flex-direction: column;
         font-size: 10px;
     }
 
@@ -1617,98 +1615,98 @@ footer {
     }
 
 
-/* detalle  */
+    /* detalle  */
 
 
-#product-detail {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 0;
-    margin-left: 8px;
-    margin-top: 120px;
-    margin-bottom: 50px;
-}
+    #product-detail {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+        margin-left: 8px;
+        margin-top: 120px;
+        margin-bottom: 50px;
+    }
 
 
-.product-detail {
-    display: flex;
-    flex-direction: column;
-}
+    .product-detail {
+        display: flex;
+        flex-direction: column;
+    }
 
-#imagenDetail {
-    width: 100%;
-}
+    #imagenDetail {
+        width: 100%;
+    }
 
-#product-detail img{
-    width: 100%;
-    height: 240px;
-    margin: 0;
-}
-
-
-#product-detail button {
-    font-size: 18px !important;
-}
-
-#detalleDetail {
-    width: 95%;
-    margin: 0;
-}
-
-#footer p {
-    font-size: 16px;
-}
-
-#precio p {
-    font-size: 24px;
-}
+    #product-detail img {
+        width: 100%;
+        height: 240px;
+        margin: 0;
+    }
 
 
+    #product-detail button {
+        font-size: 18px !important;
+    }
 
-/* compra  */
+    #detalleDetail {
+        width: 95%;
+        margin: 0;
+    }
 
-.formCompra {
-    width: 91%;
-    margin: 15px;
-    margin-top: 140px;
-    height: 50%;
-}
+    #footer p {
+        font-size: 16px;
+    }
 
-.formCompra h2 {
-    font-size: 20px;
-}
-
-
-.formCompra input {
-    padding: 8px;
-    margin-bottom: 20px;
-    /* width: 97%; */
-}
+    #precio p {
+        font-size: 24px;
+    }
 
 
-.inputsForm {
-    padding: 0;
-    padding-left: 40px;
-    display: flex;
-    justify-content: center;
-}
+
+    /* compra  */
+
+    .formCompra {
+        width: 91%;
+        margin: 15px;
+        margin-top: 140px;
+        height: 50%;
+    }
+
+    .formCompra h2 {
+        font-size: 20px;
+    }
 
 
-#compraBtn {
-    width: 50%;
-    height: 44px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    .formCompra input {
+        padding: 8px;
+        margin-bottom: 20px;
+        /* width: 97%; */
+    }
 
 
-}
+    .inputsForm {
+        padding: 0;
+        padding-left: 40px;
+        display: flex;
+        justify-content: center;
+    }
 
-.boxMensajeCompra {
-    width: 100%;
-    margin-top: 30%;
-    margin-bottom: 30%;
-    height: 50%;
-}
+
+    #compraBtn {
+        width: 50%;
+        height: 44px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+
+    }
+
+    .boxMensajeCompra {
+        width: 100%;
+        margin-top: 30%;
+        margin-bottom: 30%;
+        height: 50%;
+    }
 
 }

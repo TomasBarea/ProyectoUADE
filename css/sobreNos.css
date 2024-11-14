@@ -100,13 +100,11 @@ a {
 
 .menuHamburguesa {
     display: none;
-    /* Ocultar por defecto */
     cursor: pointer;
 }
 
 .links {
     display: flex;
-    /* Mostrar enlaces en fila */
     list-style: none;
 }
 
@@ -174,9 +172,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: left;
-    /* margin-left: 120px; */
     width: 100%;
-    /* margin-right: 150px; */
     margin: 30 auto;
     margin-top: 30px;
     order: 1;
@@ -628,7 +624,6 @@ footer {
 
     .links.show {
         display: flex;
-        /* Mostrar enlaces al hacer clic */
     }
 
     .blur {
@@ -760,7 +755,6 @@ footer {
         display: flex;
         margin-left: 10px;
         margin-right: 10px;
-        /* justify-content: center; */
     }
 
     #yt img,
