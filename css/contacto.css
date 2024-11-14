@@ -119,7 +119,7 @@ a {
 /* IMAGEN CON TEXTO  */
 
 .imgContUs {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/supras.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(./img/supras.jpg);
     background-size: cover;
     color: #ffffff;
     width: 100%;
