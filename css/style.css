@@ -513,7 +513,7 @@ a {
 
 .bodyCompra {
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/img/conce2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/conce2.jpg);
     margin-bottom: 0;
 }
 

@@ -102,7 +102,7 @@ function renderProductList() {
                 <h2>${product.Nombre}</h2>
                 <p>Sector: ${product.Sector}</p>
                 <p>Precio: US$${product.Precio}</p>
-                <a href="../pages/detalle.html?id=${product.id}"><button>Ver detalles</button></a>
+                <a href="./pages/detalle.html?id=${product.id}"><button>Ver detalles</button></a>
             </div>
         `;
         carruselItems.appendChild(productDiv);
